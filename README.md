@@ -42,8 +42,8 @@ Smooth animations, location-based weather, and a sleek onboarding experience.
 ## 🚀 Installation
 
 1. Clone the repository:
-   git clone https://github.com/OGPhantom/WeatherAppSwiftUI.git
-   cd WeatherAppSwiftUI
+   * git clone https://github.com/OGPhantom/WeatherAppSwiftUI.git
+   * cd WeatherAppSwiftUI
 
 2. Open the project in **Xcode**
 
@@ -57,5 +57,3 @@ Smooth animations, location-based weather, and a sleek onboarding experience.
 4. Run the app on a simulator or real device
 
    > ⚠️ Don’t forget to allow **location access** on first launch
-
-Хочешь — я могу сгенерировать **GitHub-hosted preview-ссылки на твои скриншоты** и вставить в `README.md`, как в примере 💪
