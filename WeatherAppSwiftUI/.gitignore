@@ -1,0 +1,42 @@
+# Xcode
+Secrets.xcconfig
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+*.playground/xcuserdata/
+*.playground/timeline/
+build/
+DerivedData/
+*.app/
+*.ipa/
+*.dSYM.zip
+*.o
+*.lo
+*.la
+*.so
+*.dylib
+*.a
+*.pbxuser
+!*.pbxproj
+!default.xcworkspace/
+!xcshareddata/
+!Package.resolved
+!Package.pins
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Other
+.swiftpm/
+.vscode/
