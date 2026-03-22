@@ -3,7 +3,13 @@
 An elegant **iOS Weather App** built with **SwiftUI**, **CoreLocation**, and a **Weather API**.
 Smooth animations, location-based weather, and a sleek onboarding experience.
 
----
+--- 
+
+## 📹 Demo 
+
+  [Demo](https://github.com/user-attachments/assets/11254264-3a23-45e3-94c3-ebbee40f2eb9)
+
+--- 
 
 ## ✨ Features
 
@@ -16,19 +22,6 @@ Smooth animations, location-based weather, and a sleek onboarding experience.
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img width="341" height="684" alt="Screenshot 2025-10-13 at 23 47 19" src="https://github.com/user-attachments/assets/12abfeb1-9208-408d-9ec4-a17f2880ba06" />
-  <img width="347" height="687" alt="Screenshot 2025-10-13 at 23 48 14" src="https://github.com/user-attachments/assets/904e51ed-b48d-4f6e-8687-9e8b6aac1270" />
-</p>
-<p align="center">
-  <img width="346" height="678" alt="Screenshot 2025-10-13 at 23 47 50" src="https://github.com/user-attachments/assets/b1a4b13f-4a99-46a3-9801-26edbe3b0ef1" />
-  <img width="346" height="686" alt="Screenshot 2025-10-13 at 23 47 59" src="https://github.com/user-attachments/assets/ce6414ec-1cf5-4869-92d2-cc8be765c42d" />
-</p>
-
----
-
 ## 🛠️ Tech Stack
 
 * **SwiftUI**
@@ -36,6 +29,16 @@ Smooth animations, location-based weather, and a sleek onboarding experience.
 * **OpenWeatherMap API (or your weather API)**
 * **MVVM Architecture**
 * **Async/Await for networking**
+
+---
+
+## 📄 Requirements
+
+– Xcode 16+
+– iOS 18.5+
+– Swift 5
+– OpenWeather API key
+– Location permission enabled
 
 ---
 
