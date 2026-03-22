@@ -1,4 +1,4 @@
-# 🌤️ WeatherAppSwiftUI
+# 🌤️ Atmos
 
 An elegant **iOS Weather App** built with **SwiftUI**, **CoreLocation**, and a **Weather API**.
 Smooth animations, location-based weather, and a sleek onboarding experience.
