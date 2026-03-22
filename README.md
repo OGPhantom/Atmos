@@ -34,11 +34,11 @@ Smooth animations, location-based weather, and a sleek onboarding experience.
 
 ## 📄 Requirements
 
-– Xcode 16+
-– iOS 18.5+
-– Swift 5
-– OpenWeather API key
-– Location permission enabled
+- Xcode 15+
+- iOS 18+
+- Swift 5
+- OpenWeather API key
+- Location permission enabled
 
 ---
 
