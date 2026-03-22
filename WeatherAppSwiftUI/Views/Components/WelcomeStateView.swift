@@ -13,14 +13,9 @@ struct WelcomeStateView: View {
                     .font(.system(size: 54))
                     .foregroundStyle(AppTheme.accent)
 
-                Text("Live Weather,\nBeautifully Presented.")
+                Text("Accurate Weather,\nInstantly")
                     .font(.system(size: 38, weight: .bold, design: .rounded))
                     .foregroundStyle(AppTheme.primaryText)
-
-                Text("A location-based weather app rebuilt with clearer architecture, explicit state management, and production-grade error handling.")
-                    .font(.title3)
-                    .foregroundStyle(AppTheme.secondaryText)
-                    .fixedSize(horizontal: false, vertical: true)
             }
 
             VStack(alignment: .leading, spacing: 14) {

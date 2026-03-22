@@ -56,11 +56,11 @@ struct WeatherDashboardView: View {
     private var header: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 6) {
-                Text("Current Conditions")
+                Text("Hello, Nikita!")
                     .font(.system(size: 15, weight: .semibold, design: .rounded))
                     .foregroundStyle(AppTheme.secondaryText)
 
-                Text("Portfolio Weather")
+                Text("Current Conditions")
                     .font(.system(size: 28, weight: .bold, design: .rounded))
                     .foregroundStyle(AppTheme.primaryText)
             }

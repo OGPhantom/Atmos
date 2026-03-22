@@ -4,32 +4,44 @@ struct WeatherSummaryCard: View {
     let weather: WeatherSnapshot
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 14) {
+
             Text("Overview")
-                .font(.headline.weight(.semibold))
-                .foregroundStyle(AppTheme.primaryText)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(AppTheme.secondaryText.opacity(0.7))
 
             Text(weather.overviewText)
-                .font(.body)
-                .foregroundStyle(AppTheme.secondaryText)
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundStyle(AppTheme.primaryText)
                 .fixedSize(horizontal: false, vertical: true)
 
             Divider()
                 .overlay(.white.opacity(0.12))
 
             HStack {
-                Text("Last updated")
-                    .foregroundStyle(AppTheme.secondaryText)
-
+                Text("Updated")
                 Spacer()
-
                 Text(weather.lastUpdatedText)
-                    .foregroundStyle(AppTheme.primaryText)
             }
-            .font(.subheadline.weight(.medium))
+            .font(.caption)
+            .foregroundStyle(AppTheme.secondaryText.opacity(0.7))
         }
         .padding(20)
-        .weatherCardBackground(cornerRadius: 24)
+        .background(
+            LinearGradient(
+                colors: [
+                    .white.opacity(0.12),
+                    .white.opacity(0.05)
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 24)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .stroke(.white.opacity(0.12))
+        )
     }
 }
 

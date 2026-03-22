@@ -22,37 +22,47 @@ struct WeatherHeroCard: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
 
-                HStack(spacing: 14) {
-                    temperatureChip(title: "Low", value: weather.minTemperature.temperatureText)
-                    temperatureChip(title: "High", value: weather.maxTemperature.temperatureText)
+
+                VStack(spacing: 10) {
+                    HStack {
+                        temperatureEdge(title: "Low", value: weather.minTemperature.temperatureText)
+
+                        Spacer()
+
+                        temperatureEdge(title: "High", value: weather.maxTemperature.temperatureText)
+                    }
+
+                    Capsule()
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    .blue.opacity(0.8),
+                                    .cyan.opacity(0.8),
+                                    .yellow.opacity(0.8)
+                                ],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(height: 6)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-
-            Image("house")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 150)
-                .shadow(color: AppTheme.shadowColor, radius: 18, x: 0, y: 12)
-                .offset(x: 12, y: 18)
         }
         .padding(24)
         .weatherCardBackground(cornerRadius: 32)
     }
 
-    private func temperatureChip(title: String, value: String) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
+    private func temperatureEdge(title: String, value: String) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
             Text(title.uppercased())
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(AppTheme.secondaryText)
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(AppTheme.secondaryText.opacity(0.8))
 
             Text(value)
-                .font(.headline.weight(.semibold))
+                .font(.system(size: 20, weight: .semibold))
                 .foregroundStyle(AppTheme.primaryText)
         }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 10)
-        .background(.white.opacity(0.08), in: Capsule())
     }
 }
 
