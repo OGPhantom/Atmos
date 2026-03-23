@@ -8,25 +8,30 @@ struct WelcomeStateView: View {
         VStack(alignment: .leading, spacing: 28) {
             Spacer()
 
-            VStack(alignment: .leading, spacing: 18) {
+            HStack(alignment: .center, spacing: 18) {
                 Image(systemName: "cloud.sun.rain.fill")
                     .font(.system(size: 54))
                     .foregroundStyle(AppTheme.accent)
 
                 Text("Accurate Weather,\nInstantly")
-                    .font(.system(size: 38, weight: .bold, design: .rounded))
+                    .font(.system(size: 28, weight: .bold, design: .rounded))
                     .foregroundStyle(AppTheme.primaryText)
             }
 
             VStack(alignment: .leading, spacing: 14) {
-                LocationButton(.currentLocation) {
+                Button {
                     onRequestLocation()
+                } label: {
+                    HStack {
+                        Image(systemName: "location.fill")
+                        Text("Current Location")
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 16)
                 }
-                .labelStyle(.titleAndIcon)
-                .symbolVariant(.fill)
-                .tint(Color(red: 0.12, green: 0.20, blue: 0.35))
-                .cornerRadius(18)
-                .frame(height: 56)
+                .background(Color(red: 0.12, green: 0.20, blue: 0.35))
+                .foregroundStyle(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 18))
 
                 Text("Your location is used only to fetch the current forecast for this session.")
                     .font(.footnote)
