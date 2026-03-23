@@ -7,10 +7,18 @@ Smooth animations, location-based weather, and a sleek onboarding experience.
 
 ## 📹 Demo 
 
-  [Demo](https://github.com/user-attachments/assets/11254264-3a23-45e3-94c3-ebbee40f2eb9)
+  [Demo](https://github.com/user-attachments/assets/4c60567c-169b-4021-96c0-3c0b2d5acd18)
 
 --- 
 
+## 📸 Screenshots 
+
+<p align="center"> 
+  <img width="568" height="1084" alt="Screenshot 2026-03-23 at 12 24 58" src="https://github.com/user-attachments/assets/e5927e3c-64fc-4b1d-a734-6b4612f6cab7" />
+  <img width="568" height="1084" alt="Screenshot 2026-03-23 at 12 25 21" src="https://github.com/user-attachments/assets/37672887-a725-4b0a-8659-7c5ed30535ec" />
+</p>
+
+--- 
 ## ✨ Features
 
 * 📍 Get local weather using **CoreLocation**
