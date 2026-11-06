@@ -3,6 +3,8 @@
 An elegant **iOS Weather App** built with **SwiftUI**, **CoreLocation**, and a **Weather API**.
 Smooth animations, location-based weather, and a sleek onboarding experience.
 
+> 🛠️ **Practice project.** A small app I built to practise SwiftUI, location and working with a weather API; not a product.
+
 --- 
 
 ## 📹 Demo 
